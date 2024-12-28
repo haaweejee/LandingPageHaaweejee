@@ -12,7 +12,7 @@
 }(function (_, kotlin_kotlin) {
   'use strict';
   //region block: imports
-  var equals = kotlin_kotlin.$_$.ta;
+  var equals = kotlin_kotlin.$_$.va;
   //endregion
   //region block: pre-declaration
   //endregion

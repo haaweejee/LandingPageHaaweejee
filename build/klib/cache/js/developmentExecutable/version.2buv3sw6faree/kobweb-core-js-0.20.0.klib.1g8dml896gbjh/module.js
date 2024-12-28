@@ -29,95 +29,96 @@
   //region block: imports
   var imul = Math.imul;
   var _Char___init__impl__6a9atx = kotlin_kotlin.$_$.g2;
-  var charArrayOf = kotlin_kotlin.$_$.na;
-  var trimStart = kotlin_kotlin.$_$.pe;
+  var charArrayOf = kotlin_kotlin.$_$.pa;
+  var trimStart = kotlin_kotlin.$_$.qe;
   var get_http = kotlin_com_varabyte_kobweb_browser_ext.$_$.a;
   var Unit_getInstance = kotlin_kotlin.$_$.m4;
-  var protoOf = kotlin_kotlin.$_$.ec;
+  var protoOf = kotlin_kotlin.$_$.gc;
   var VOID = kotlin_kotlin.$_$.f;
-  var initMetadataForClass = kotlin_kotlin.$_$.bb;
-  var KProperty1 = kotlin_kotlin.$_$.uc;
-  var getPropertyCallableRef = kotlin_kotlin.$_$.ya;
-  var KMutableProperty0 = kotlin_kotlin.$_$.rc;
-  var KMutableProperty1 = kotlin_kotlin.$_$.sc;
-  var lazy = kotlin_kotlin.$_$.dg;
-  var THROW_CCE = kotlin_kotlin.$_$.if;
-  var Annotation = kotlin_kotlin.$_$.ue;
-  var Style = kotlin_org_jetbrains_compose_html_html_core.$_$.h5;
-  var get_px = kotlin_org_jetbrains_compose_html_html_core.$_$.w4;
-  var padding = kotlin_org_jetbrains_compose_html_html_core.$_$.t4;
-  var margin = kotlin_org_jetbrains_compose_html_html_core.$_$.n4;
-  var boxSizing = kotlin_org_jetbrains_compose_html_html_core.$_$.o3;
-  var StyleSheet = kotlin_org_jetbrains_compose_html_html_core.$_$.e3;
+  var initMetadataForClass = kotlin_kotlin.$_$.db;
+  var KProperty1 = kotlin_kotlin.$_$.wc;
+  var getPropertyCallableRef = kotlin_kotlin.$_$.ab;
+  var KMutableProperty0 = kotlin_kotlin.$_$.tc;
+  var KMutableProperty1 = kotlin_kotlin.$_$.uc;
+  var lazy = kotlin_kotlin.$_$.eg;
+  var THROW_CCE = kotlin_kotlin.$_$.jf;
+  var Annotation = kotlin_kotlin.$_$.ve;
+  var Style = kotlin_org_jetbrains_compose_html_html_core.$_$.f6;
+  var get_px = kotlin_org_jetbrains_compose_html_html_core.$_$.i5;
+  var padding = kotlin_org_jetbrains_compose_html_html_core.$_$.f5;
+  var margin = kotlin_org_jetbrains_compose_html_html_core.$_$.w4;
+  var boxSizing = kotlin_org_jetbrains_compose_html_html_core.$_$.u3;
+  var StyleSheet = kotlin_org_jetbrains_compose_html_html_core.$_$.j3;
   var StyleSheet_init_$Init$ = kotlin_org_jetbrains_compose_html_html_core.$_$.a;
-  var layer = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.g1;
-  var initMetadataForObject = kotlin_kotlin.$_$.gb;
-  var updateChangedFlags = kotlin_org_jetbrains_compose_runtime_runtime.$_$.a1;
-  var throwUninitializedPropertyAccessException = kotlin_kotlin.$_$.kg;
-  var toString = kotlin_kotlin.$_$.hc;
+  var layer = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.m1;
+  var initMetadataForObject = kotlin_kotlin.$_$.ib;
+  var updateChangedFlags = kotlin_org_jetbrains_compose_runtime_runtime.$_$.f1;
+  var throwUninitializedPropertyAccessException = kotlin_kotlin.$_$.lg;
+  var toString = kotlin_kotlin.$_$.jc;
   var IllegalStateException_init_$Create$ = kotlin_kotlin.$_$.s1;
   var getValue = kotlin_kotlin.$_$.i7;
-  var getStringHashCode = kotlin_kotlin.$_$.za;
-  var substringAfterLast = kotlin_kotlin.$_$.ee;
+  var getStringHashCode = kotlin_kotlin.$_$.bb;
+  var sourceInformationMarkerStart = kotlin_org_jetbrains_compose_runtime_runtime.$_$.b1;
+  var sourceInformationMarkerEnd = kotlin_org_jetbrains_compose_runtime_runtime.$_$.a1;
+  var substringAfterLast = kotlin_kotlin.$_$.ge;
   var plus = kotlin_kotlin.$_$.d8;
-  var equals = kotlin_kotlin.$_$.ta;
-  var hashCode = kotlin_kotlin.$_$.ab;
-  var initMetadataForCompanion = kotlin_kotlin.$_$.cb;
-  var mutableStateOf = kotlin_org_jetbrains_compose_runtime_runtime.$_$.u;
-  var staticCompositionLocalOf = kotlin_org_jetbrains_compose_runtime_runtime.$_$.x;
-  var initMetadataForInterface = kotlin_kotlin.$_$.eb;
-  var ensureNotNull = kotlin_kotlin.$_$.bg;
-  var isBlank = kotlin_kotlin.$_$.pd;
-  var startsWith = kotlin_kotlin.$_$.de;
-  var endsWith = kotlin_kotlin.$_$.kd;
-  var startsWith_0 = kotlin_kotlin.$_$.ce;
-  var dropLast = kotlin_kotlin.$_$.id;
-  var charSequenceLength = kotlin_kotlin.$_$.qa;
-  var removePrefix = kotlin_kotlin.$_$.vd;
-  var THROW_IAE = kotlin_kotlin.$_$.jf;
-  var enumEntries = kotlin_kotlin.$_$.ga;
-  var Enum = kotlin_kotlin.$_$.xe;
-  var noWhenBranchMatchedException = kotlin_kotlin.$_$.eg;
+  var equals = kotlin_kotlin.$_$.va;
+  var hashCode = kotlin_kotlin.$_$.cb;
+  var initMetadataForCompanion = kotlin_kotlin.$_$.eb;
+  var mutableStateOf = kotlin_org_jetbrains_compose_runtime_runtime.$_$.y;
+  var staticCompositionLocalOf = kotlin_org_jetbrains_compose_runtime_runtime.$_$.c1;
+  var initMetadataForInterface = kotlin_kotlin.$_$.gb;
+  var Companion_getInstance = kotlin_org_jetbrains_compose_runtime_runtime.$_$.l1;
+  var A = kotlin_org_jetbrains_compose_html_html_core.$_$.w5;
+  var ensureNotNull = kotlin_kotlin.$_$.cg;
+  var isBlank = kotlin_kotlin.$_$.rd;
+  var startsWith = kotlin_kotlin.$_$.fe;
+  var endsWith = kotlin_kotlin.$_$.md;
+  var startsWith_0 = kotlin_kotlin.$_$.ee;
+  var dropLast = kotlin_kotlin.$_$.kd;
+  var charSequenceLength = kotlin_kotlin.$_$.sa;
+  var removePrefix = kotlin_kotlin.$_$.xd;
+  var noWhenBranchMatchedException = kotlin_kotlin.$_$.fg;
+  var THROW_IAE = kotlin_kotlin.$_$.kf;
+  var enumEntries = kotlin_kotlin.$_$.ia;
+  var Enum = kotlin_kotlin.$_$.ye;
   var StringBuilder_init_$Create$ = kotlin_kotlin.$_$.e1;
   var ArrayList_init_$Create$ = kotlin_kotlin.$_$.k;
   var joinToString = kotlin_kotlin.$_$.m7;
-  var objectCreate = kotlin_kotlin.$_$.dc;
-  var drop = kotlin_kotlin.$_$.jd;
-  var first = kotlin_kotlin.$_$.md;
+  var objectCreate = kotlin_kotlin.$_$.fc;
+  var drop = kotlin_kotlin.$_$.ld;
+  var first = kotlin_kotlin.$_$.od;
   var LinkedHashMap_init_$Create$ = kotlin_kotlin.$_$.u;
-  var split = kotlin_kotlin.$_$.ae;
+  var split = kotlin_kotlin.$_$.ce;
   var getOrNull = kotlin_kotlin.$_$.h7;
-  var Exception = kotlin_kotlin.$_$.ze;
+  var Exception = kotlin_kotlin.$_$.af;
   var Exception_init_$Init$ = kotlin_kotlin.$_$.j1;
-  var captureStack = kotlin_kotlin.$_$.ma;
+  var captureStack = kotlin_kotlin.$_$.oa;
   var composableLambdaInstance = kotlin_org_jetbrains_compose_runtime_runtime.$_$.a;
-  var replace = kotlin_kotlin.$_$.zd;
+  var replace = kotlin_kotlin.$_$.be;
   var emptyMap = kotlin_kotlin.$_$.a7;
   var last = kotlin_kotlin.$_$.s7;
   var DynamicNode = kotlin_com_varabyte_kobweb_client_server_internal.$_$.a;
   var toRouteString = kotlin_com_varabyte_kobweb_client_server_internal.$_$.c;
-  var substringBefore = kotlin_kotlin.$_$.ge;
-  var to = kotlin_kotlin.$_$.mg;
-  var substringAfter = kotlin_kotlin.$_$.fe;
+  var substringBefore = kotlin_kotlin.$_$.ie;
+  var to = kotlin_kotlin.$_$.ng;
+  var substringAfter = kotlin_kotlin.$_$.he;
   var Collection = kotlin_kotlin.$_$.w4;
-  var isInterface = kotlin_kotlin.$_$.qb;
+  var isInterface = kotlin_kotlin.$_$.sb;
   var rememberComposableLambda = kotlin_org_jetbrains_compose_runtime_runtime.$_$.c;
-  var sourceInformationMarkerStart = kotlin_org_jetbrains_compose_runtime_runtime.$_$.w;
-  var Companion_getInstance = kotlin_org_jetbrains_compose_runtime_runtime.$_$.g1;
-  var sourceInformationMarkerEnd = kotlin_org_jetbrains_compose_runtime_runtime.$_$.v;
   var RouteTree = kotlin_com_varabyte_kobweb_client_server_internal.$_$.b;
   var ArrayList_init_$Create$_0 = kotlin_kotlin.$_$.l;
-  var map = kotlin_kotlin.$_$.cd;
+  var map = kotlin_kotlin.$_$.ed;
   var CompositionLocalProvider = kotlin_org_jetbrains_compose_runtime_runtime.$_$.e;
   var IllegalArgumentException_init_$Create$ = kotlin_kotlin.$_$.n1;
   var listOf = kotlin_kotlin.$_$.v7;
-  var removeSuffix = kotlin_kotlin.$_$.wd;
-  var contains = kotlin_kotlin.$_$.fd;
-  var charSequenceGet = kotlin_kotlin.$_$.pa;
-  var contains_0 = kotlin_kotlin.$_$.gd;
-  var toMutableMap = kotlin_kotlin.$_$.h9;
-  var Div = kotlin_org_jetbrains_compose_html_html_core.$_$.f5;
-  var Text = kotlin_org_jetbrains_compose_html_html_core.$_$.j5;
+  var removeSuffix = kotlin_kotlin.$_$.yd;
+  var contains = kotlin_kotlin.$_$.hd;
+  var charSequenceGet = kotlin_kotlin.$_$.ra;
+  var contains_0 = kotlin_kotlin.$_$.id;
+  var toMutableMap = kotlin_kotlin.$_$.j9;
+  var Div = kotlin_org_jetbrains_compose_html_html_core.$_$.y5;
+  var Text = kotlin_org_jetbrains_compose_html_html_core.$_$.i6;
   //endregion
   //region block: pre-declaration
   initMetadataForClass(ApiFetcher, 'ApiFetcher', VOID, VOID, VOID, [3, 4]);
@@ -129,10 +130,10 @@
   initMetadataForCompanion(Companion);
   initMetadataForClass(PageContext, 'PageContext');
   initMetadataForClass(InitKobwebContext, 'InitKobwebContext');
+  initMetadataForInterface(OpenLinkStrategies, 'OpenLinkStrategies');
   initMetadataForInterface(KobwebConfig, 'KobwebConfig');
   initMetadataForClass(MutableKobwebConfig, 'MutableKobwebConfig', MutableKobwebConfig, VOID, [KobwebConfig]);
   initMetadataForCompanion(Companion_0);
-  initMetadataForInterface(OpenLinkStrategies, 'OpenLinkStrategies');
   initMetadataForClass(MutableOpenLinkStrategies, 'MutableOpenLinkStrategies', MutableOpenLinkStrategies, VOID, [OpenLinkStrategies]);
   initMetadataForInterface(BasePath, 'BasePath');
   initMetadataForCompanion(Companion_1, VOID, [BasePath]);
@@ -145,9 +146,9 @@
   initMetadataForClass(RouteException, 'RouteException', VOID, Exception);
   initMetadataForClass(RouteEntry, 'RouteEntry');
   initMetadataForClass(Router, 'Router', Router);
+  initMetadataForClass(UpdateHistoryMode, 'UpdateHistoryMode', VOID, Enum);
   initMetadataForClass(RouteInterceptorScope, 'RouteInterceptorScope');
   initMetadataForObject(ComposableSingletons$RouterKt, 'ComposableSingletons$RouterKt');
-  initMetadataForClass(UpdateHistoryMode, 'UpdateHistoryMode', VOID, Enum);
   //endregion
   function get_api(_this__u8e3s4) {
     _init_properties_ApiFetcher_kt__epxlpv();
@@ -473,6 +474,27 @@
   var PageContextLocal;
   var com_varabyte_kobweb_core_PageContext_RouteInfo$stable;
   var com_varabyte_kobweb_core_PageContext$stable;
+  function rememberPageContext($composer, $changed) {
+    _init_properties_PageContext_kt__u2hiem();
+    var $composer_0 = $composer;
+    $composer_0.startReplaceGroup_5hh8aj_k$(979146567);
+    // Inline function 'androidx.compose.runtime.CompositionLocal.current' call
+    var this_0 = get_PageContextLocal();
+    var $composer_1 = $composer_0;
+    sourceInformationMarkerStart($composer_1, 2023513938, 'CC:CompositionLocal.kt#9igjgp');
+    var tmp0 = $composer_1.consume_ebzcrh_k$(this_0);
+    sourceInformationMarkerEnd($composer_1);
+    var tmp;
+    if (tmp0 == null) {
+      var message = 'PageContext is only valid within a @Page composable';
+      throw IllegalStateException_init_$Create$(toString(message));
+    } else {
+      tmp = tmp0;
+    }
+    var tmp0_0 = tmp;
+    $composer_0.endReplaceGroup_ek144q_k$();
+    return tmp0_0;
+  }
   function _get_route__bsf68o($this) {
     return $this.route_1;
   }
@@ -641,6 +663,8 @@
   var MutableKobwebConfigInstance;
   var com_varabyte_kobweb_core_init_MutableOpenLinkStrategies$stable;
   var com_varabyte_kobweb_core_init_MutableKobwebConfig$stable;
+  function OpenLinkStrategies() {
+  }
   function MutableKobwebConfig() {
     this.openLinkStrategies_1 = new MutableOpenLinkStrategies();
   }
@@ -679,8 +703,6 @@
   protoOf(MutableOpenLinkStrategies).get_external_945310_k$ = function () {
     return this.external_1;
   };
-  function OpenLinkStrategies() {
-  }
   var properties_initialized_KobwebConfig_kt_yaxikm;
   function _init_properties_KobwebConfig_kt__rz30d4() {
     if (!properties_initialized_KobwebConfig_kt_yaxikm) {
@@ -689,6 +711,117 @@
       com_varabyte_kobweb_core_init_MutableOpenLinkStrategies$stable = 8;
       com_varabyte_kobweb_core_init_MutableKobwebConfig$stable = 8;
     }
+  }
+  function Anchor(href, attrs, openInternalLinksStrategy, openExternalLinksStrategy, updateHistoryMode, content, $composer, $changed, $default) {
+    var attrs_0 = {_v: attrs};
+    var openInternalLinksStrategy_0 = {_v: openInternalLinksStrategy};
+    var openExternalLinksStrategy_0 = {_v: openExternalLinksStrategy};
+    var updateHistoryMode_0 = {_v: updateHistoryMode};
+    var content_0 = {_v: content};
+    var $composer_0 = $composer;
+    $composer_0 = $composer_0.startRestartGroup_lebv1i_k$(1682374411);
+    var $dirty = $changed;
+    if (!(($default & 1) === 0))
+      $dirty = $dirty | 6;
+    else if (($changed & 6) === 0)
+      $dirty = $dirty | ($composer_0.changed_ga7h3f_k$(href) ? 4 : 2);
+    if (!(($default & 2) === 0))
+      $dirty = $dirty | 48;
+    else if (($changed & 48) === 0)
+      $dirty = $dirty | ($composer_0.changedInstance_s1wkiy_k$(attrs_0._v) ? 32 : 16);
+    if (!(($default & 4) === 0))
+      $dirty = $dirty | 384;
+    else if (($changed & 384) === 0)
+      $dirty = $dirty | ($composer_0.changed_ga7h3f_k$(openInternalLinksStrategy_0._v) ? 256 : 128);
+    if (!(($default & 8) === 0))
+      $dirty = $dirty | 3072;
+    else if (($changed & 3072) === 0)
+      $dirty = $dirty | ($composer_0.changed_ga7h3f_k$(openExternalLinksStrategy_0._v) ? 2048 : 1024);
+    if (!(($default & 16) === 0))
+      $dirty = $dirty | 24576;
+    else if (($changed & 24576) === 0)
+      $dirty = $dirty | ($composer_0.changed_ga7h3f_k$(updateHistoryMode_0._v) ? 16384 : 8192);
+    if (!(($default & 32) === 0))
+      $dirty = $dirty | 196608;
+    else if (($changed & 196608) === 0)
+      $dirty = $dirty | ($composer_0.changedInstance_s1wkiy_k$(content_0._v) ? 131072 : 65536);
+    if (!(($dirty & 74899) === 74898) || !$composer_0.get_skipping_3owdve_k$()) {
+      if (!(($default & 2) === 0)) {
+        attrs_0._v = null;
+      }
+      if (!(($default & 4) === 0)) {
+        openInternalLinksStrategy_0._v = null;
+      }
+      if (!(($default & 8) === 0)) {
+        openExternalLinksStrategy_0._v = null;
+      }
+      if (!(($default & 16) === 0)) {
+        updateHistoryMode_0._v = null;
+      }
+      if (!(($default & 32) === 0)) {
+        content_0._v = null;
+      }
+      var ctx = rememberPageContext($composer_0, 0);
+      var tmp = Companion_getInstance_2().prepend_osifcc_k$(href);
+      $composer_0.startReplaceGroup_5hh8aj_k$(-901903562);
+      var tmp0 = $composer_0;
+      // Inline function 'androidx.compose.runtime.cache' call
+      var invalid = !!(!!(!!(!!(!!(($dirty & 112) === 32 | ($dirty & 896) === 256) | ($dirty & 7168) === 2048) | $composer_0.changedInstance_s1wkiy_k$(ctx)) | ($dirty & 14) === 4) | ($dirty & 57344) === 16384);
+      // Inline function 'kotlin.let' call
+      // Inline function 'androidx.compose.runtime.cache.<anonymous>' call
+      var it = tmp0.rememberedValue_4dg93v_k$();
+      var tmp_0;
+      if (invalid || it === Companion_getInstance().get_Empty_i9b85g_k$()) {
+        // Inline function 'com.varabyte.kobweb.navigation.Anchor.<anonymous>' call
+        var value = Anchor$lambda(attrs_0, openInternalLinksStrategy_0, openExternalLinksStrategy_0, ctx, href, updateHistoryMode_0);
+        tmp0.updateRememberedValue_l1wh71_k$(value);
+        tmp_0 = value;
+      } else {
+        tmp_0 = it;
+      }
+      var tmp_1 = tmp_0;
+      var tmp0_group = (tmp_1 == null ? true : !(tmp_1 == null)) ? tmp_1 : THROW_CCE();
+      $composer_0.endReplaceGroup_ek144q_k$();
+      A(tmp, tmp0_group, content_0._v, $composer_0, 896 & $dirty >> 9, 0);
+    } else {
+      $composer_0.skipToGroupEnd_lh3zi2_k$();
+    }
+    var tmp1_safe_receiver = $composer_0.endRestartGroup_yxpjv9_k$();
+    if (tmp1_safe_receiver == null)
+      null;
+    else {
+      tmp1_safe_receiver.updateScope_t8jcf_k$(Anchor$lambda_0(href, attrs_0, openInternalLinksStrategy_0, openExternalLinksStrategy_0, updateHistoryMode_0, content_0, $changed, $default));
+    }
+  }
+  function Anchor$lambda$lambda($openInternalLinksStrategy, $openExternalLinksStrategy, $ctx, $href, $updateHistoryMode) {
+    return function (evt) {
+      var tmp0_elvis_lhs = $openInternalLinksStrategy._v;
+      var openInternalLinksStrategy = tmp0_elvis_lhs == null ? toOpenLinkStrategy(evt, Companion_getInstance_1().get_Instance_ljxvgi_k$().get_openLinkStrategies_sr8wv2_k$().get_internal_mdbuyi_k$()) : tmp0_elvis_lhs;
+      var tmp1_elvis_lhs = $openExternalLinksStrategy._v;
+      var openExternalLinksStrategy = tmp1_elvis_lhs == null ? toOpenLinkStrategy(evt, Companion_getInstance_1().get_Instance_ljxvgi_k$().get_openLinkStrategies_sr8wv2_k$().get_external_945310_k$()) : tmp1_elvis_lhs;
+      var tmp = $ctx.get_router_j3zccy_k$();
+      var tmp2_elvis_lhs = $updateHistoryMode._v;
+      tmp.navigateTo_5oprea_k$($href, tmp2_elvis_lhs == null ? UpdateHistoryMode_PUSH_getInstance() : tmp2_elvis_lhs, openInternalLinksStrategy, openExternalLinksStrategy);
+      evt.preventDefault_xs6po9_k$();
+      evt.stopPropagation_5qf8uy_k$();
+      return Unit_getInstance();
+    };
+  }
+  function Anchor$lambda($attrs, $openInternalLinksStrategy, $openExternalLinksStrategy, $ctx, $href, $updateHistoryMode) {
+    return function ($this$A) {
+      var tmp;
+      if (!($attrs._v == null)) {
+        tmp = $attrs._v($this$A);
+      }
+      $this$A.onClick_q9cds6_k$(Anchor$lambda$lambda($openInternalLinksStrategy, $openExternalLinksStrategy, $ctx, $href, $updateHistoryMode));
+      return Unit_getInstance();
+    };
+  }
+  function Anchor$lambda_0($href, $attrs, $openInternalLinksStrategy, $openExternalLinksStrategy, $updateHistoryMode, $content, $$changed, $$default) {
+    return function ($composer, $force) {
+      Anchor($href, $attrs._v, $openInternalLinksStrategy._v, $openExternalLinksStrategy._v, $updateHistoryMode._v, $content._v, $composer, updateChangedFlags($$changed | 1), $$default);
+      return Unit_getInstance();
+    };
   }
   var com_varabyte_kobweb_navigation_BasePathImpl$stable;
   function Companion_1() {
@@ -799,6 +932,23 @@
   function prependIf(_this__u8e3s4, condition, path) {
     return condition ? _this__u8e3s4.prepend_osifcc_k$(path) : path;
   }
+  function open(_this__u8e3s4, href, strategy) {
+    switch (strategy.get_ordinal_ip24qg_k$()) {
+      case 0:
+        _this__u8e3s4.open(href, '_self');
+        break;
+      case 1:
+        _this__u8e3s4.open(href, '_blank');
+        break;
+      default:
+        noWhenBranchMatchedException();
+        break;
+    }
+  }
+  function toOpenLinkStrategy(_this__u8e3s4, default_0) {
+    default_0 = default_0 === VOID ? OpenLinkStrategy_IN_PLACE_getInstance() : default_0;
+    return _this__u8e3s4.get_ctrlKey_jfc6q3_k$() || _this__u8e3s4.get_shiftKey_ujdkqu_k$() ? OpenLinkStrategy_IN_NEW_TAB_getInstance() : default_0;
+  }
   var OpenLinkStrategy_IN_PLACE_instance;
   var OpenLinkStrategy_IN_NEW_TAB_instance;
   function values() {
@@ -832,19 +982,6 @@
   var $ENTRIES;
   function OpenLinkStrategy(name, ordinal) {
     Enum.call(this, name, ordinal);
-  }
-  function open(_this__u8e3s4, href, strategy) {
-    switch (strategy.get_ordinal_ip24qg_k$()) {
-      case 0:
-        _this__u8e3s4.open(href, '_self');
-        break;
-      case 1:
-        _this__u8e3s4.open(href, '_blank');
-        break;
-      default:
-        noWhenBranchMatchedException();
-        break;
-    }
   }
   function OpenLinkStrategy_IN_PLACE_getInstance() {
     OpenLinkStrategy_initEntries();
@@ -1634,6 +1771,40 @@
     }
     return tmp;
   };
+  var UpdateHistoryMode_PUSH_instance;
+  var UpdateHistoryMode_REPLACE_instance;
+  function values_0() {
+    return [UpdateHistoryMode_PUSH_getInstance(), UpdateHistoryMode_REPLACE_getInstance()];
+  }
+  function valueOf_0(value) {
+    switch (value) {
+      case 'PUSH':
+        return UpdateHistoryMode_PUSH_getInstance();
+      case 'REPLACE':
+        return UpdateHistoryMode_REPLACE_getInstance();
+      default:
+        UpdateHistoryMode_initEntries();
+        THROW_IAE('No enum constant value.');
+        break;
+    }
+  }
+  function get_entries_0() {
+    if ($ENTRIES_0 == null)
+      $ENTRIES_0 = enumEntries(values_0());
+    return $ENTRIES_0;
+  }
+  var UpdateHistoryMode_entriesInitialized;
+  function UpdateHistoryMode_initEntries() {
+    if (UpdateHistoryMode_entriesInitialized)
+      return Unit_getInstance();
+    UpdateHistoryMode_entriesInitialized = true;
+    UpdateHistoryMode_PUSH_instance = new UpdateHistoryMode('PUSH', 0);
+    UpdateHistoryMode_REPLACE_instance = new UpdateHistoryMode('REPLACE', 1);
+  }
+  var $ENTRIES_0;
+  function UpdateHistoryMode(name, ordinal) {
+    Enum.call(this, name, ordinal);
+  }
   function _get_route__bsf68o_0($this) {
     return $this.route_1;
   }
@@ -1716,40 +1887,6 @@
     if (ComposableSingletons$RouterKt_instance == null)
       new ComposableSingletons$RouterKt();
     return ComposableSingletons$RouterKt_instance;
-  }
-  var UpdateHistoryMode_PUSH_instance;
-  var UpdateHistoryMode_REPLACE_instance;
-  function values_0() {
-    return [UpdateHistoryMode_PUSH_getInstance(), UpdateHistoryMode_REPLACE_getInstance()];
-  }
-  function valueOf_0(value) {
-    switch (value) {
-      case 'PUSH':
-        return UpdateHistoryMode_PUSH_getInstance();
-      case 'REPLACE':
-        return UpdateHistoryMode_REPLACE_getInstance();
-      default:
-        UpdateHistoryMode_initEntries();
-        THROW_IAE('No enum constant value.');
-        break;
-    }
-  }
-  function get_entries_0() {
-    if ($ENTRIES_0 == null)
-      $ENTRIES_0 = enumEntries(values_0());
-    return $ENTRIES_0;
-  }
-  var UpdateHistoryMode_entriesInitialized;
-  function UpdateHistoryMode_initEntries() {
-    if (UpdateHistoryMode_entriesInitialized)
-      return Unit_getInstance();
-    UpdateHistoryMode_entriesInitialized = true;
-    UpdateHistoryMode_PUSH_instance = new UpdateHistoryMode('PUSH', 0);
-    UpdateHistoryMode_REPLACE_instance = new UpdateHistoryMode('REPLACE', 1);
-  }
-  var $ENTRIES_0;
-  function UpdateHistoryMode(name, ordinal) {
-    Enum.call(this, name, ordinal);
   }
   function DefaultErrorPage(errorCode, $composer, $changed) {
     var $composer_0 = $composer;
@@ -1856,14 +1993,16 @@
   //endregion
   //region block: exports
   _.$_$ = _.$_$ || {};
-  _.$_$.a = get_api;
-  _.$_$.b = initKobweb;
-  _.$_$.c = KobwebApp;
+  _.$_$.a = initKobweb;
+  _.$_$.b = KobwebApp;
+  _.$_$.c = Anchor;
   _.$_$.d = Router;
   _.$_$.e = remove;
-  _.$_$.f = UpdateHistoryMode_REPLACE_getInstance;
-  _.$_$.g = AppGlobals_getInstance;
-  _.$_$.h = Companion_getInstance_2;
+  _.$_$.f = OpenLinkStrategy_IN_NEW_TAB_getInstance;
+  _.$_$.g = OpenLinkStrategy_IN_PLACE_getInstance;
+  _.$_$.h = UpdateHistoryMode_REPLACE_getInstance;
+  _.$_$.i = AppGlobals_getInstance;
+  _.$_$.j = Companion_getInstance_2;
   //endregion
   return _;
 }));

@@ -12,28 +12,59 @@
 }(function (_, kotlin_kotlin) {
   'use strict';
   //region block: imports
-  var Regex_init_$Create$ = kotlin_kotlin.$_$.d1;
-  var toSet = kotlin_kotlin.$_$.j9;
-  var THROW_CCE = kotlin_kotlin.$_$.if;
-  var isCharSequence = kotlin_kotlin.$_$.mb;
-  var trim = kotlin_kotlin.$_$.qe;
-  var toString = kotlin_kotlin.$_$.hc;
   var ArrayList_init_$Create$ = kotlin_kotlin.$_$.l;
-  var joinToString = kotlin_kotlin.$_$.m7;
+  var THROW_CCE = kotlin_kotlin.$_$.jf;
+  var isCharSequence = kotlin_kotlin.$_$.ob;
+  var trim = kotlin_kotlin.$_$.re;
+  var toString = kotlin_kotlin.$_$.jc;
   var StringBuilder_init_$Create$ = kotlin_kotlin.$_$.e1;
-  var charSequenceLength = kotlin_kotlin.$_$.qa;
+  var charSequenceLength = kotlin_kotlin.$_$.sa;
   var joinTo = kotlin_kotlin.$_$.o7;
-  var ensureNotNull = kotlin_kotlin.$_$.bg;
+  var toSet = kotlin_kotlin.$_$.l9;
+  var Regex_init_$Create$ = kotlin_kotlin.$_$.d1;
+  var joinToString = kotlin_kotlin.$_$.m7;
+  var ensureNotNull = kotlin_kotlin.$_$.cg;
+  var protoOf = kotlin_kotlin.$_$.gc;
+  var initMetadataForClass = kotlin_kotlin.$_$.db;
   var VOID = kotlin_kotlin.$_$.f;
   //endregion
   //region block: pre-declaration
+  initMetadataForClass(EventListenerHandler, 'EventListenerHandler');
   //endregion
-  function hasClass(_this__u8e3s4, cssClass) {
-    var tmp1 = _this__u8e3s4.className;
-    // Inline function 'kotlin.text.toRegex' call
-    var this_0 = '(^|.*\\s+)' + cssClass + '($|\\s+.*)';
-    // Inline function 'kotlin.text.matches' call
-    return Regex_init_$Create$(this_0).matches_evli6i_k$(tmp1);
+  function addClass(_this__u8e3s4, cssClasses) {
+    // Inline function 'kotlin.collections.filterNot' call
+    // Inline function 'kotlin.collections.filterNotTo' call
+    var destination = ArrayList_init_$Create$();
+    var inductionVariable = 0;
+    var last = cssClasses.length;
+    while (inductionVariable < last) {
+      var element = cssClasses[inductionVariable];
+      inductionVariable = inductionVariable + 1 | 0;
+      // Inline function 'kotlinx.dom.addClass.<anonymous>' call
+      if (!hasClass(_this__u8e3s4, element)) {
+        destination.add_utx5q5_k$(element);
+      }
+    }
+    var missingClasses = destination;
+    // Inline function 'kotlin.collections.isNotEmpty' call
+    if (!missingClasses.isEmpty_y1axqb_k$()) {
+      // Inline function 'kotlin.text.trim' call
+      var this_0 = _this__u8e3s4.className;
+      var presentClasses = toString(trim(isCharSequence(this_0) ? this_0 : THROW_CCE()));
+      // Inline function 'kotlin.text.buildString' call
+      // Inline function 'kotlin.apply' call
+      var this_1 = StringBuilder_init_$Create$();
+      // Inline function 'kotlinx.dom.addClass.<anonymous>' call
+      this_1.append_22ad7x_k$(presentClasses);
+      // Inline function 'kotlin.text.isEmpty' call
+      if (!(charSequenceLength(presentClasses) === 0)) {
+        this_1.append_22ad7x_k$(' ');
+      }
+      joinTo(missingClasses, this_1, ' ');
+      _this__u8e3s4.className = this_1.toString();
+      return true;
+    }
+    return false;
   }
   function removeClass(_this__u8e3s4, cssClasses) {
     var tmp$ret$1;
@@ -76,61 +107,41 @@
     }
     return false;
   }
-  function addClass(_this__u8e3s4, cssClasses) {
-    // Inline function 'kotlin.collections.filterNot' call
-    // Inline function 'kotlin.collections.filterNotTo' call
-    var destination = ArrayList_init_$Create$();
-    var inductionVariable = 0;
-    var last = cssClasses.length;
-    while (inductionVariable < last) {
-      var element = cssClasses[inductionVariable];
-      inductionVariable = inductionVariable + 1 | 0;
-      // Inline function 'kotlinx.dom.addClass.<anonymous>' call
-      if (!hasClass(_this__u8e3s4, element)) {
-        destination.add_utx5q5_k$(element);
-      }
-    }
-    var missingClasses = destination;
-    // Inline function 'kotlin.collections.isNotEmpty' call
-    if (!missingClasses.isEmpty_y1axqb_k$()) {
-      // Inline function 'kotlin.text.trim' call
-      var this_0 = _this__u8e3s4.className;
-      var presentClasses = toString(trim(isCharSequence(this_0) ? this_0 : THROW_CCE()));
-      // Inline function 'kotlin.text.buildString' call
-      // Inline function 'kotlin.apply' call
-      var this_1 = StringBuilder_init_$Create$();
-      // Inline function 'kotlinx.dom.addClass.<anonymous>' call
-      this_1.append_22ad7x_k$(presentClasses);
-      // Inline function 'kotlin.text.isEmpty' call
-      if (!(charSequenceLength(presentClasses) === 0)) {
-        this_1.append_22ad7x_k$(' ');
-      }
-      joinTo(missingClasses, this_1, ' ');
-      _this__u8e3s4.className = this_1.toString();
-      return true;
-    }
-    return false;
+  function hasClass(_this__u8e3s4, cssClass) {
+    var tmp1 = _this__u8e3s4.className;
+    // Inline function 'kotlin.text.toRegex' call
+    var this_0 = '(^|.*\\s+)' + cssClass + '($|\\s+.*)';
+    // Inline function 'kotlin.text.matches' call
+    return Regex_init_$Create$(this_0).matches_evli6i_k$(tmp1);
   }
   function clear(_this__u8e3s4) {
     while (_this__u8e3s4.hasChildNodes()) {
       _this__u8e3s4.removeChild(ensureNotNull(_this__u8e3s4.firstChild));
     }
   }
+  function EventListener(handler) {
+    return new EventListenerHandler(handler);
+  }
+  function _get_handler__z70553($this) {
+    return $this.handler_1;
+  }
+  function EventListenerHandler(handler) {
+    this.handler_1 = handler;
+  }
+  protoOf(EventListenerHandler).handleEvent_zcjn50_k$ = function (event) {
+    this.handler_1(event);
+  };
+  protoOf(EventListenerHandler).handleEvent = function (event) {
+    return this.handleEvent_zcjn50_k$(event);
+  };
+  protoOf(EventListenerHandler).toString = function () {
+    return 'EventListenerHandler(' + toString(this.handler_1) + ')';
+  };
   function get(_this__u8e3s4, index) {
     // Inline function 'kotlin.js.asDynamic' call
     return _this__u8e3s4[index];
   }
-  function EventSourceInit(withCredentials) {
-    withCredentials = withCredentials === VOID ? false : withCredentials;
-    var o = {};
-    o['withCredentials'] = withCredentials;
-    return o;
-  }
   function get_0(_this__u8e3s4, index) {
-    // Inline function 'kotlin.js.asDynamic' call
-    return _this__u8e3s4[index];
-  }
-  function get_1(_this__u8e3s4, index) {
     // Inline function 'kotlin.js.asDynamic' call
     return _this__u8e3s4[index];
   }
@@ -184,8 +195,8 @@
   _.$_$ = _.$_$ || {};
   _.$_$.a = addClass;
   _.$_$.b = clear;
-  _.$_$.c = hasClass;
-  _.$_$.d = removeClass;
+  _.$_$.c = removeClass;
+  _.$_$.d = EventListener;
   //endregion
   return _;
 }));
