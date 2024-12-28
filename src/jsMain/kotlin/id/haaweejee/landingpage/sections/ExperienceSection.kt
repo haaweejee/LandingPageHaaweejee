@@ -48,7 +48,7 @@ fun ExperienceContent() {
         sectionId = Section.Experience.id,
         distanceFromTop = 1200.0,
         onViewPortEntered = {
-            animatedMargin = 50.px
+            animatedMargin = 14.px
         }
     )
 

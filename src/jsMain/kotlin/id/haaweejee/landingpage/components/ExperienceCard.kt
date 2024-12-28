@@ -42,6 +42,8 @@ import org.jetbrains.compose.web.css.ms
 import org.jetbrains.compose.web.css.percent
 import org.jetbrains.compose.web.css.px
 import org.jetbrains.compose.web.css.times
+import org.jetbrains.compose.web.dom.Li
+import org.jetbrains.compose.web.dom.Ol
 import org.jetbrains.compose.web.dom.P
 import org.jetbrains.compose.web.dom.Text
 
@@ -74,7 +76,7 @@ fun ExperienceCard(
 @Composable
 fun ExperienceDescription(
     active: Boolean,
-    description: String
+    description: List<String>
 ) {
     Box(
         modifier = Modifier
@@ -83,18 +85,35 @@ fun ExperienceDescription(
             .padding(all = 14.px)
             .backgroundColor(if (active) Theme.Primary.rgb else Theme.LighterGray.rgb)
     ) {
-        P(
-            attrs = Modifier
-                .fillMaxWidth()
-                .margin(topBottom = 0.px)
-                .fontFamily(FONT_FAMILY)
-                .fontSize(14.px)
-                .lineHeight(1.6)
-                .fontWeight(FontWeight.Normal)
-                .color(if (active) Theme.White.rgb else Theme.Secondary.rgb)
-                .toAttrs()
-        ) {
-            Text(description)
+        Ol {
+            description.forEach { description ->
+                Li(
+                    Modifier
+                        .fillMaxWidth()
+                        .margin(topBottom = 0.px)
+                        .fontFamily(FONT_FAMILY)
+                        .fontSize(14.px)
+                        .lineHeight(1.6)
+                        .fontWeight(FontWeight.Normal)
+                        .color(if (active) Theme.White.rgb else Theme.Secondary.rgb)
+                        .toAttrs()
+                ) {
+                    P(
+                        attrs = Modifier
+                            .fillMaxWidth()
+                            .margin(topBottom = 0.px)
+                            .fontFamily(FONT_FAMILY)
+                            .fontSize(14.px)
+                            .lineHeight(1.6)
+                            .fontWeight(FontWeight.Normal)
+                            .color(if (active) Theme.White.rgb else Theme.Secondary.rgb)
+                            .toAttrs()
+                    ) {
+                        Text(description)
+                    }
+                }
+            }
+
         }
     }
 }
@@ -156,7 +175,7 @@ fun ExperienceDetails(
                 Text("${experience.from} - ${experience.to}")
             }
             Column(
-                modifier = Modifier.margin(top = 8.px),
+                modifier = Modifier,
             ) {
                 P(
                     attrs = Modifier

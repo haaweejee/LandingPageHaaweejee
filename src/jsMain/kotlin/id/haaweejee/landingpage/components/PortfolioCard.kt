@@ -43,12 +43,11 @@ import org.jetbrains.compose.web.dom.Text
 fun PortfolioCard(
     modifier: Modifier = Modifier,
     portfolio: Portfolio,
-    link: String = ""
 ) {
     Link(
         modifier = PortfolioSectionStyle.toModifier()
             .textDecorationLine(TextDecorationLine.None),
-        path = link,
+        path = portfolio.link,
         openExternalLinksStrategy = OpenLinkStrategy.IN_NEW_TAB
     ) {
         Column(

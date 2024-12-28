@@ -1,18 +1,15 @@
 package id.haaweejee.landingpage.styles
 
 
-import com.varabyte.kobweb.compose.css.FontWeight
 import com.varabyte.kobweb.compose.css.Transition
 import com.varabyte.kobweb.compose.ui.Modifier
 import com.varabyte.kobweb.compose.ui.graphics.Colors
 import com.varabyte.kobweb.compose.ui.modifiers.color
-import com.varabyte.kobweb.compose.ui.modifiers.fontWeight
 import com.varabyte.kobweb.compose.ui.modifiers.transform
 import com.varabyte.kobweb.compose.ui.modifiers.transition
 import com.varabyte.kobweb.compose.ui.modifiers.width
 import com.varabyte.kobweb.compose.ui.styleModifier
 import com.varabyte.kobweb.silk.style.CssStyle
-import com.varabyte.kobweb.silk.style.selectors.anyLink
 import com.varabyte.kobweb.silk.style.selectors.hover
 import id.haaweejee.landingpage.models.Theme
 import org.jetbrains.compose.web.ExperimentalComposeWebApi
@@ -21,7 +18,6 @@ import org.jetbrains.compose.web.css.filter
 import org.jetbrains.compose.web.css.ms
 import org.jetbrains.compose.web.css.percent
 import org.jetbrains.compose.web.css.px
-import org.jetbrains.compose.web.css.rgb
 import org.jetbrains.compose.web.css.rgba
 
 val NavigationItemStyle = CssStyle {
@@ -101,11 +97,11 @@ val MainButtonStyle = CssStyle {
 val MainButtonCVStyle = CssStyle {
     base {
         Modifier
-            .width(150.px)
+            .width(180.px)
             .transition(Transition.of(property = "width", duration = 200.ms))
     }
     hover {
-        Modifier.width(180.px)
+        Modifier.width(200.px)
     }
 }
 

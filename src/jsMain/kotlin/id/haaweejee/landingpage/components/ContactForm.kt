@@ -116,9 +116,8 @@ fun ContactForm(breakpoint: Breakpoint) {
                     .onClick {
                         inputMessage =
                             (document.getElementById("inputMessage") as? HTMLTextAreaElement)?.value.orEmpty()
-                        console.log("TextArea Value: $inputMessage")
                         window.open(
-                            "https://api.whatsapp.com/send/?phone=6281387258259&text=Saya $inputName, $inputMessage&type=phone_number&app_absent=0",
+                            "https://api.whatsapp.com/send/?phone=6282217106768&text=Saya $inputName, $inputMessage&type=phone_number&app_absent=0",
                             ""
                         )
                     }

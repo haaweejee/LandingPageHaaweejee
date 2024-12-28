@@ -62,7 +62,6 @@ fun PortfolioContent() {
         )
         PortfolioCards(breakpoint)
         PortfolioNavigation()
-
     }
 }
 
