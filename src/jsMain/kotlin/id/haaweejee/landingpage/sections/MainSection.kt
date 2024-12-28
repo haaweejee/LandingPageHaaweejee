@@ -1,18 +1,35 @@
 package id.haaweejee.landingpage.sections
 
 import androidx.compose.runtime.Composable
-import com.varabyte.kobweb.compose.css.*
+import com.varabyte.kobweb.compose.css.Cursor
+import com.varabyte.kobweb.compose.css.FontWeight
+import com.varabyte.kobweb.compose.css.ObjectFit
+import com.varabyte.kobweb.compose.css.TextDecorationLine
 import com.varabyte.kobweb.compose.foundation.layout.Arrangement
 import com.varabyte.kobweb.compose.foundation.layout.Box
 import com.varabyte.kobweb.compose.foundation.layout.Column
 import com.varabyte.kobweb.compose.foundation.layout.Row
 import com.varabyte.kobweb.compose.ui.Alignment
 import com.varabyte.kobweb.compose.ui.Modifier
-import com.varabyte.kobweb.compose.ui.modifiers.*
+import com.varabyte.kobweb.compose.ui.modifiers.backgroundColor
+import com.varabyte.kobweb.compose.ui.modifiers.border
+import com.varabyte.kobweb.compose.ui.modifiers.borderRadius
+import com.varabyte.kobweb.compose.ui.modifiers.color
+import com.varabyte.kobweb.compose.ui.modifiers.cursor
+import com.varabyte.kobweb.compose.ui.modifiers.fillMaxHeight
+import com.varabyte.kobweb.compose.ui.modifiers.fillMaxSize
+import com.varabyte.kobweb.compose.ui.modifiers.fillMaxWidth
+import com.varabyte.kobweb.compose.ui.modifiers.fontFamily
+import com.varabyte.kobweb.compose.ui.modifiers.fontSize
+import com.varabyte.kobweb.compose.ui.modifiers.fontWeight
+import com.varabyte.kobweb.compose.ui.modifiers.height
+import com.varabyte.kobweb.compose.ui.modifiers.id
+import com.varabyte.kobweb.compose.ui.modifiers.margin
+import com.varabyte.kobweb.compose.ui.modifiers.maxWidth
+import com.varabyte.kobweb.compose.ui.modifiers.objectFit
+import com.varabyte.kobweb.compose.ui.modifiers.textDecorationLine
 import com.varabyte.kobweb.compose.ui.toAttrs
 import com.varabyte.kobweb.silk.components.graphics.Image
-import com.varabyte.kobweb.silk.components.layout.SimpleGrid
-import com.varabyte.kobweb.silk.components.layout.numColumns
 import com.varabyte.kobweb.silk.components.navigation.Link
 import com.varabyte.kobweb.silk.style.breakpoint.Breakpoint
 import com.varabyte.kobweb.silk.style.toModifier
@@ -33,7 +50,6 @@ import org.jetbrains.compose.web.css.px
 import org.jetbrains.compose.web.dom.Button
 import org.jetbrains.compose.web.dom.P
 import org.jetbrains.compose.web.dom.Text
-import org.jetbrains.compose.web.dom.Th
 
 @Composable
 fun MainSection(onMenuClicked: () -> Unit) {
@@ -179,7 +195,7 @@ fun MainText(breakpoint: Breakpoint) {
                                 .color(Theme.White.rgb)
                                 .textDecorationLine(TextDecorationLine.None),
                             text = "Download My CV",
-                            path = "https://drive.google.com/file/d/1yoyqlOOevWgEvm77tRyThD_PynL3zxxS/view?usp=sharing"
+                            path = "https://drive.google.com/file/d/1qcEN-e1juNRjimMdx6jxi79rhbRWJqCd/view?usp=sharing"
                         )
                     }
                 }
