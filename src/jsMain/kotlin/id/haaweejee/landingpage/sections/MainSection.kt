@@ -42,6 +42,7 @@ import id.haaweejee.landingpage.styles.MainButtonCVStyle
 import id.haaweejee.landingpage.styles.MainButtonStyle
 import id.haaweejee.landingpage.styles.MainImageStyle
 import id.haaweejee.landingpage.util.BACKGROUND_IMAGE
+import id.haaweejee.landingpage.util.CV_URL
 import id.haaweejee.landingpage.util.FONT_FAMILY
 import id.haaweejee.landingpage.util.MAIN_IMAGE
 import id.haaweejee.landingpage.util.SECTION_WIDTH
@@ -195,7 +196,7 @@ fun MainText(breakpoint: Breakpoint) {
                                 .color(Theme.White.rgb)
                                 .textDecorationLine(TextDecorationLine.None),
                             text = "Download My CV",
-                            path = "https://drive.google.com/file/d/1qcEN-e1juNRjimMdx6jxi79rhbRWJqCd/view?usp=sharing"
+                            path = CV_URL
                         )
                     }
                 }
@@ -235,7 +236,7 @@ fun MainText(breakpoint: Breakpoint) {
                                 .color(Theme.White.rgb)
                                 .textDecorationLine(TextDecorationLine.None),
                             text = "Download My CV",
-                            path = "https://drive.google.com/file/d/1yoyqlOOevWgEvm77tRyThD_PynL3zxxS/view?usp=sharing"
+                            path = CV_URL
                         )
                     }
                 }
